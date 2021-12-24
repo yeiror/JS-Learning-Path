@@ -1,0 +1,36 @@
+nav{
+    justify-content: space-between;
+    font-size: large;
+}
+
+a{
+    text-decoration: none;
+    color:azure;
+}
+
+#nav2 a{
+    font-size: small;
+}
+
+
+body{
+    background-image:url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+
+.container{
+    background-color:aliceblue;
+    margin-top:30px;
+    width: 50vw;
+    height: 80vh;
+    border-radius:10px;
+}
+
+form{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.texto1{
+    border: 1px solid;
+}
