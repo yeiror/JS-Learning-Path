@@ -2,6 +2,19 @@ nav{
     justify-content: space-between;
     font-size: large;
 }
+#contenedorLista{
+    background-color:darkgray;
+    border: 1px solid;
+    font-weight: bolder;
+    display: none;
+    margin-bottom: 2%;
+}
+
+#contenedor1{
+     margin: auto;
+     margin-bottom: 2%;
+
+}
 
 #nav-principal a{
     text-decoration: none;
@@ -20,8 +33,8 @@ body{
 .container{
     background-color:aliceblue;
     margin-top:30px;
-    width: 50vw;
-    height: 80vh;
+    width: 70vw;
+    height:auto;
     border-radius:10px;
 }
 

@@ -21,7 +21,8 @@
       <nav class="nav" id="nav2">
         <a class="nav-link" href="#">inicio</a>
         <a class="nav-link">Contacta al creador</a>
-        <a class="nav-link">Mediana</a>
+        <a class="nav-link" href="mediana.html">Mediana</a>
+        <a class="nav-link">Moda</a>
       </nav>
     </nav>
     <div class="container d-flex flex-column align-items-center">
@@ -29,31 +30,34 @@
       <div class="row mt-3 mb-3">
         <h1>Promedio</h1>
       </div>
-      <form>
-          <label for="numeroLista">numero a la lista</label>
-          <input id="numeroLista" type="number" />
-        <div class="form-row mx-auto my-2">
-          <button type="button" class="btn btn-secondary" onclick="agregarLista()"><i class="bi bi-snow2"></i> Enviar número a la lista</button>
-          <button type="button" class="btn btn-secondary mx-2" onclick="limpiar()">Borrar lista</button>
-        </div>
-        
-      
-      <div class="form-row my-3">
-        <div class="col-8 mx-auto rounded texto1 pt-2">
-        <p id="listado">Tu lista lleva: (-) elementos si es correcto, presiona el botón 'Calcular promedio'</p>
-        </div>
-      </div>
 
-      <div class="form-row my-3">
-        <button class="btn btn-secondary " onclick="calcularPromedio()">Calcular Promedio</button>
-      </div>
+      <div class="row">
+        <div class="col-8" id="contenedor1">
+            <form>
+              <label for="numeroLista">numero a la lista</label>
+              <input id="numeroLista" class="mb-3" type="number" />
+            <div class="form-row d-inline">
+              <button type="button" class="btn btn-secondary" onclick="agregarLista()"><i class="bi bi-snow2"></i> Enviar número a la lista</button>
+              <button type="button" class="btn btn-secondary mx-2" onclick="limpiar()">Borrar lista</button>
+            </div>
+          
+          <div class="form-row my-3">
+            <div class="col-8 mx-auto rounded texto1 pt-2">
+            <p id="listado">Tu lista lleva: (-) elemento(s) si es correcto, presiona el botón 'Calcular promedio'</p>
+            </div>
+          </div>
 
-      <div class="form-row my-2">
-        <div class="col-8 mx-auto texto1 rounded pt-2">
-        <p id="resultado">El promedio de la lista es:</p>
-        </div>
+          <div class="form-row my-2">
+            <div class="col-8 mx-auto texto1 rounded pt-2">
+            <p id="resultado">El promedio de la lista es:</p>
+            </div>
+          </div>  
+        </form>
+       </div>
+       <div id="contenedorLista" class="col-3 mx-auto rounded" style="text-align: center;">
+          <span id="lista"></span>
+       </div>
       </div>
-    </form>
     </div>
 
     <script src="promedio.js"></script>
